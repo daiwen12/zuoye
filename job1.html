@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创新驱动未来</title>
+    <style>
+        /* 全局：模拟手绘纸张质感 */
+        body {
+            font-family: "Comic Sans MS", "Marker Felt", sans-serif;
+            background-color: #f5f5f0;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* 容器：模拟手绘边框 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* 导航栏 */
+        .navbar {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: #333;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* 菱形简化版 */
+            margin-right: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            position: relative;
+        }
+
+        .nav-link.active {
+            color: #000;
+            font-weight: bold;
+        }
+
+        .nav-link.active::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #007bff; /* 选中时下划线 */
+        }
+
+        /* 横幅区域 */
+        .banner {
+            background-color: #e0e0e0;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+        }
+
+        .banner-title {
+            font-size: 3em;
+            color: #ff6600; /* 橙色标题 */
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        /* 产品介绍 */
+        .product-intro {
+            margin-bottom: 20px;
+        }
+
+        .intro-title {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .intro-cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .intro-card {
+            text-align: center;
+        }
+
+        .intro-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .intro-text {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        /* 企业优势 */
+        .enterprise-adv {
+            margin-bottom: 20px;
+        }
+
+        .adv-title {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .adv-cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .adv-card {
+            text-align: center;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .adv-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .adv-text {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        /* 图标样式（用emoji简化模拟手绘图标） */
+        .gear { content: "⚙️⚙️⚙️"; }
+        .rocket { content: "🚀"; }
+        .shield { content: "🛡️"; }
+        .check { color: green; content: "✅"; }
+        .star { color: blue; content: "⭐"; }
+        .bolt { color: red; content: "⚡"; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="navbar">
+            <div class="logo"></div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active">产品/服务</a>
+                <a href="#" class="nav-link">关于我们</a>
+                <a href="#" class="nav-link">联系方式</a>
+            </div>
+        </div>
+
+        <!-- 横幅 -->
+        <div class="banner">
+            <h1 class="banner-title">创新驱动未来</h1>
+        </div>
+
+        <!-- 产品介绍 -->
+        <div class="product-intro">
+            <h2 class="intro-title">产品介绍：</h2>
+            <div class="intro-cards">
+                <div class="intro-card">
+                    <div class="intro-icon gear">⚙️⚙️⚙️</div>
+                    <div class="intro-text">技术研发</div>
+                </div>
+                <div class="intro-card">
+                    <div class="intro-icon rocket">🚀</div>
+                    <div class="intro-text">快速迭代</div>
+                </div>
+                <div class="intro-card">
+                    <div class="intro-icon shield">🛡️</div>
+                    <div class="intro-text">安全保障</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 企业优势 -->
+        <div class="enterprise-adv">
+            <h2 class="adv-title">企业优势：</h2>
+            <div class="adv-cards">
+                <div class="adv-card">
+                    <div class="adv-icon check">✅</div>
+                    <div class="adv-text">高效服务</div>
+                </div>
+                <div class="adv-card">
+                    <div class="adv-icon star">⭐</div>
+                    <div class="adv-text">卓越品质</div>
+                </div>
+                <div class="adv-card">
+                    <div class="adv-icon bolt">⚡</div>
+                    <div class="adv-text">快速响应</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
